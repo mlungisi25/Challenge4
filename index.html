@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<center>
+	<h1>JavaScript Challenges</h1>
+	<p>Convert any number into hours and minutes</p>
+</center>
+
+<center>
+		<input id="Num" >
+		<br><br>
+		<button type="button" onclick="myTime()">Submit</button>
+	
+<p id="tm"> </p>
+<p></p>
+</center>
+
+<script>
+	function myTime() 
+{
+	var x,hours, min;
+	
+	x = document.getElementById("Num").value;
+
+	hours=Math.floor(x/60);
+	min = x%60;
+	
+	
+	    document.getElementById("tm").innerHTML = hours+" Hours" +" ;"+ min+" Minutes";
+}
+</script>
+
+</body>
+</html>
